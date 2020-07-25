@@ -1,0 +1,10 @@
+.page{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    font-family: Roboto, Roboto Slab, Source Sans Pro;
+    color: #1A1B22;;
+}

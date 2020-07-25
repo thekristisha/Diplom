@@ -1,0 +1,9 @@
+.tech-card__img{
+margin: 0 auto;
+width: 88px;
+height: 97px;
+}
+.tech-card__img:nth-child(4n-1){
+    height: 88px; 
+    width: 88px;
+}

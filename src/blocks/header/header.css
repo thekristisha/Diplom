@@ -1,0 +1,15 @@
+@import url(./__navigation/header__navigation.css);
+@import url(./__main/header__main.css);
+@import url(./__decor-elem/header__decor-elem.css);
+@import url(./__about-project/header__about-project.css);
+@import url(./_style-white/header_style-white.css);
+@import url(./_style-black/header_style-black.css);
+@import url(./_style-inactive/header_style-inactive.css);
+.header{
+    max-width: 1440px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}

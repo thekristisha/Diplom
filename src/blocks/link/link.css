@@ -1,0 +1,15 @@
+.link{
+text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+margin-right: 40px;
+color: #1A1B22;
+}
+.link:last-child{
+    margin-right: 0;
+}
+.link:hover{
+    cursor: pointer;
+    color: #B6BCBF;
+}

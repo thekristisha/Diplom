@@ -1,0 +1,6 @@
+.statistics__first-row{
+max-width: 1232px;
+border-bottom: 1px solid #1A1B22;
+display: flex;
+align-items: center;
+}

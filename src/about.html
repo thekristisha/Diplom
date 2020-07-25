@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NewsAnalyzer - анализ новостей">
+    <meta name="keyword" content="NewsAnalyzer, newa, analyzer, analitics, новости, аналитика, анализ, статистика">
+    <meta name="author" content="Кристина Серикова. Front-end разработчик">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="<%=require('./images/favicon.svg')%>" type="image/x-icon">   
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <title>NewsAnalyzer - О проекте</title>
+
+
+</head>
+
+<body>
+    <div class="page">
+        <header class="header header_style-black">
+            <a href="./index.html" class="logo logo_style-black">NewsAnalyzer</a>
+            <div class="header__navigation">
+                <a href="./index.html" class="header__main header__main_style-black">Главная</a>
+                <div class="header__decor-elem header__decor-elem_style-black"></div>
+                <a href="./about.html" class="header__about-project header__about-project_style-black">О проекте</a>
+            </div>
+        </header>
+
+        <section class="for-clients">
+            <p class="for-clients__title">Клиентам</p>
+            <p class="for-clients__main-text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель —
+                показать, чему научился студент, какими технологиями владеет. Вёрстка сайта выполнена по методологии
+                БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность
+                проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле
+                поддерживать. Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт
+                продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса. При
+                создании проекта была использована сборка технологией Webpack. Это современный подход к разработке
+                сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах.
+                Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А
+                значит, потенциальная аудитория возрастает. Проект был проверен экспертами Яндекс.Практикума. Если
+                вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+        </section>
+        <section class="technologies">
+            <div class="technologies__container">
+                <p class="technologies__title">Используемые технологии</p>
+                <div class="technologies__second_column">
+                    <div class="tech-card">
+                        <p class="tech-card__name">HTML</p>
+                        <img class="tech-card__img" src="<%=require('./images/HTML.png')%>" alt="">
+                    </div>
+                    <div class="tech-card">
+                        <p class="tech-card__name">CSS</p>
+                        <img class="tech-card__img" src="<%=require('./images/CSS.png')%>" alt="">
+                    </div>
+                    <div class="tech-card">
+                        <p class="tech-card__name">Java Script</p>
+                        <img class="tech-card__img" src="<%=require('./images/js.png')%>" alt="">
+                    </div>
+                    <div class="tech-card">
+                        <p class="tech-card__name">Webpack</p>
+                        <img class="tech-card__img" src="<%=require('./images/WEB.png')%>" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="author">
+            <div class="two-columns">
+                <img src="<%=require('./images/avatar.jpg')%>"
+                    alt="загорелая, улыбающаяся девушка с темными кучерявыми волосами в солнцезащитных очках "
+                    class="two-columns__portrait">
+                <div class="two-columns__main-text">
+                    <p class="two-columns__title">Об авторе</p>
+                    <p class="two-columns__about">Это блок с описанием автора проекта. Здесь следует указать, как вас
+                        зовут,
+                        чем
+                        вы занимаетесь, какими технологиями разработки владеете. Также можно рассказать о процессе
+                        обучения
+                        в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="git-history">
+            <div class="git-history__header">
+                <p class="git-history__title">История коммитов из GitHub</p>
+                <a class="git-history__link" href="">Открыть в Github ></a>
+            </div>
+
+            <div class="git-history__swiper">
+                <div class="git-history__wrapper">
+
+                    <div class="git-card">
+                        <p class="git-card__date">14 августа, 2019</p>
+                        <div class="git-card__author">
+                            <img class="git-card__photo" src="<%=require('./images/portrait1.jpg')%>" alt="">
+                            <div class="git-card__second-column">
+                                <p class="git-card__name">Антон Долинин</p>
+                                <p class="git-card__mail">anton@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="git-card__commit">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+                    <div class="git-card">
+                        <p class="git-card__date">14 августа, 2019</p>
+                        <div class="git-card__author">
+                            <img class="git-card__photo" src="<%=require('./images/portrait2.jpg')%>" alt="">
+                            <div class="git-card__second-column">
+                                <p class="git-card__name">Мария Фёдорова</p>
+                                <p class="git-card__mail">mariiifed@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="git-card__commit">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
+                    </div>
+                    <div class="git-card">
+                        <p class="git-card__date">14 августа, 2019</p>
+                        <div class="git-card__author">
+                            <img class="git-card__photo" src="<%=require('./images/avatar.jpg')%>" alt="">
+                            <div class="git-card__second-column">
+                                <p class="git-card__name">Инга Иванова</p>
+                                <p class="git-card__mail">ingaiva@yandex.ru</p>
+                            </div>
+                        </div>
+                        <p class="git-card__commit">ith Emmet, you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abb... </p>
+                    </div>  
+
+                </div>
+                <div class="git-history__pagination"></div>
+                <div class="git-history__button-prev"></div>
+                <div class="git-history__button-next"></div>
+                <div class="git-history__scrollbar"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__supersite">&copy; 2020. Supersite</p>
+            <div class="footer__links">
+                <a href="./main.html" class="link footer__link-main">Главная</a>
+                <a href="./about.html" class="link footer__link-project">О проекте</a>
+                <a href="https://praktikum.yandex.ru" class="link footer__link-praktikum">Яндекс.Практикум</a>
+            </div>
+            <div class="footer__social">
+                <a href="" class="icon footer__link-git"><img src="<%=require('./images/git-icon.svg')%>" alt=""></a>
+                <a href="" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>" alt=""></a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>

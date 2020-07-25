@@ -1,0 +1,10 @@
+@import url(./__portrait/two-columns__portrait.css);
+@import url(./__main-text/two-columns__main-text.css);
+@import url(./__title/two-columns__title.css);
+@import url(./__about/two-columns__about.css);
+.two-columns{
+    margin: 80px auto 80px;
+    display: flex;
+    max-width: 1120px;
+    max-height: 464px;
+}

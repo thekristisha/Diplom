@@ -1,0 +1,5 @@
+.statistics__second-column{
+    margin: 8px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+}

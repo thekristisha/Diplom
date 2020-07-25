@@ -1,0 +1,5 @@
+.technologies__second_column{
+    display: flex;
+    justify-content: space-between;
+    margin: 93px 0 0 178px;
+}

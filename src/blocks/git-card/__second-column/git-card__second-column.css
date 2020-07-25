@@ -1,0 +1,5 @@
+.git-card__second-column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}

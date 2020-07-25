@@ -1,0 +1,5 @@
+.git-card__author{
+    display: flex;
+    max-width: 352px;
+    margin: 24px 0 0 24px;
+}

@@ -1,0 +1,16 @@
+@import url(./__date/git-card__date.css);
+@import url(./__author/git-card__author.css);
+@import url(./__photo/git-card__photo.css);
+@import url(./__second-column/git-card__second-column.css);
+@import url(./__name/git-card__name.css);
+@import url(./__mail/git-card__mail.css);
+@import url(./__commit/git-card__commit.css);
+.git-card{
+width: 400px;
+height: 288px;
+background: #FFFFFF;
+border-radius: 16px;
+display: flex;
+flex-direction: column;
+margin-right: 16px;
+}

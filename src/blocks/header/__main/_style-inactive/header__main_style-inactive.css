@@ -1,0 +1,7 @@
+.header__main.header__main_style-inactive{
+    color: #B6BCBF;
+}
+.header__main.header__main_style-inactive:hover{
+    color: #1A1B22;
+    cursor: pointer;
+}

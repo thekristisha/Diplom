@@ -1,0 +1,8 @@
+.header__navigation{
+    margin: 30px 101px 0 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+}

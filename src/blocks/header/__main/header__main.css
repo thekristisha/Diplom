@@ -1,0 +1,8 @@
+@import url(./_style-white/header__main_style-white.css);
+@import url(./_style-black/header__main_style-black.css);
+@import url(./_style-inactive/header__main_style-inactive.css);
+.header__main{
+    text-decoration: none;
+    font-family: 'Roboto';
+    margin-right: 34px;
+}

@@ -1,0 +1,9 @@
+@import url(./_is-active/not-found_is-active.css);
+@import url(./__img/not-found__img.css);
+@import url(./__title/not-found__title.css);
+@import url(./__text/not-found__text.css);
+.not-found{
+    display: none;
+    margin: 80px auto 0;
+    max-width: 356px;
+}

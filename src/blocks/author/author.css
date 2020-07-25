@@ -1,0 +1,5 @@
+@import url(./two-columns/two-columns.css);
+.author{
+    max-width: 1440px;
+    margin: 0;
+}

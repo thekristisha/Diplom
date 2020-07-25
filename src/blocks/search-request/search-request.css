@@ -1,0 +1,10 @@
+@import url(./__title/search-request__title.css);
+@import url(./__subtitle/search-request__subtitle.css);
+@import url(./__input/search-request__input.css);
+@import url(./__button/search-request__button.css);
+.search-request{
+    position: relative;
+    z-index: 5;
+    display: flexbox;
+    align-items: center;
+}

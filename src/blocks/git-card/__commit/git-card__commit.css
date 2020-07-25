@@ -1,0 +1,10 @@
+.git-card__commit{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 352px;
+    margin: 16px auto 0;
+    color: #1A1B22;
+}

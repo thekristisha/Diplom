@@ -1,0 +1,11 @@
+@import url(./_is-active/preloader_is-active.css);
+@import url(./__circle/preloader__circle.css);
+@import url(./__text/preloader__text.css);
+
+.preloader{
+    max-width: 280px;
+    max-height: 122px;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+}

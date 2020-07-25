@@ -1,0 +1,7 @@
+@import url(./_style-white/header__about-project_style-white.css);
+@import url(./_style-black/header__about-project_style-black.css);
+@import url(./_style-inactive/header__about-project_style-inactive.css);
+.header__about-project{
+    margin: 0;
+    text-decoration: none;
+}

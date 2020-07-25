@@ -1,0 +1,6 @@
+@import url(./_style-white/header__decor-elem_style-white.css);
+@import url(./_style-black/header__decor-elem_style-black.css);
+.header__decor-elem{
+    align-self: flex-end;
+    height: 3px;
+}

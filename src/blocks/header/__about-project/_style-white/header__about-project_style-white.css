@@ -1,0 +1,8 @@
+.header__about-project.header__about-project_style-white{
+color: #B6BCBF;
+}
+
+.header__about-project.header__about-project_style-white:hover{
+cursor: pointer;
+color: white;
+}

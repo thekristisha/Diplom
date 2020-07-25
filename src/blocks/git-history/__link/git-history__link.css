@@ -1,0 +1,14 @@
+.git-history__link{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+align-items: center;
+color: #1A1B22;
+text-decoration: none;
+}
+.git-history__link:hover{
+color: #B6BCBF;
+cursor: pointer;
+}

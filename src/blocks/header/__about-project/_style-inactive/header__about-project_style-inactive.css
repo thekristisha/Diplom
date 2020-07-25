@@ -1,0 +1,7 @@
+.header__about-project.header__about-project_style-inactive{
+    color: #B6BCBF;
+}
+.header__about-project.header__about-project_style-inactive:hover{
+    color: #1A1B22;
+    cursor: pointer;
+}

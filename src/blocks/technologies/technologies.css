@@ -1,0 +1,7 @@
+@import url(./__container/technologies__container.css);
+@import url(./__title/technologies__title.css);
+@import url(./__second_column/technologies__second_column.css);
+.technologies{
+max-width: 1440px;
+background: #F5F6F7;
+}
