@@ -1,4 +1,6 @@
 @import url(./__navigation/header__navigation.css);
+@import url(./__main-with-decor/header__main-with-decor.css);
+@import url(./__project-with-decor/header__project-with-decor.css);
 @import url(./__main/header__main.css);
 @import url(./__decor-elem/header__decor-elem.css);
 @import url(./__about-project/header__about-project.css);

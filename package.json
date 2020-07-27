@@ -5,7 +5,8 @@
   "main": "./src/main.js",
   "scripts": {
     "build": "rm -rf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch"
+    "dev": "webpack-dev-server --mode development --open --watch",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/thekristisha/Diplom/issues"
   },
-  "homepage": "https://github.com/thekristisha/Diplom#readme",
+  "homepage": "https://thekristisha.github.io/Diplom",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",

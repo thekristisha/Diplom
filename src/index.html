@@ -20,8 +20,10 @@
             <header class="header header_style-white">
                 <a href="./index.html" class="logo logo_style-white">NewsAnalyzer</a>
                 <div class="header__navigation">
-                    <a href="./index.html" class="header__main header__main_style-white">Главная</a>
-                    <div class="header__decor-elem header__decor-elem_style-white"></div>
+                    <div class="header__main-with-decor">
+                        <a href="./index.html" class="header__main header__main_style-white">Главная</a>
+                        <div class="header__decor-elem header__decor-elem_style-white"></div>
+                    </div>
                     <a href="./about.html" class="header__about-project header__about-project_style-white">О проекте</a>
                 </div>
             </header>
@@ -33,10 +35,13 @@
                     новостях
                     за
                     прошедшую неделю.</p>
-
-                <input placeholder="Введите тему новости" id="search" type="text" class="search-request__input" required>
+                <form class="search-request__form" name="form" action="">   
+                <input placeholder="Введите тему новости" id="search" type="text" class="search-request__input"
+                    required>
                 <span id="search-error" class="search-request__error" aria-live="polite"></span>
                 <button class="search-request__button">Искать</button>
+            </form> 
+                
 
             </section>
         </div>
@@ -64,46 +69,54 @@
                         <img class="card__img" src="<%=require('./images/card1.png')%>" alt="">
                         <p class="card__data">2 августа, 2019</p>
                         <p class="card__title">Национальное достояние – парки</p>
-                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                            складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                            приобщиться к природе.</p>
                         <p class="card__source">Лента.ру</p>
                     </div>
                     <div class="card">
                         <img class="card__img" src="<%=require('./images/card2.png')%>" alt="">
                         <p class="card__data">2 августа, 2019</p>
                         <p class="card__title">Лесные огоньки: история одной фотографии</p>
-                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                            чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                         <p class="card__source">Медуза</p>
                     </div>
                     <div class="card">
                         <img class="card__img" src="<%=require('./images/card3.png')%>" alt="">
                         <p class="card__data">2 августа, 2019</p>
                         <p class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
-                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                            необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                         <p class="card__source">Риа</p>
                     </div>
                     <div class="card">
                         <img class="card__img" src="<%=require('./images/card4.png')%>" alt="">
                         <p class="card__data">2 августа, 2019</p>
                         <p class="card__title">Национальное достояние – парки</p>
-                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                            складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                            приобщиться к природе.</p>
                         <p class="card__source">Дзен</p>
                     </div>
                     <div class="card">
                         <img class="card__img" src="<%=require('./images/card5.png')%>" alt="">
                         <p class="card__data">2 августа, 2019</p>
                         <p class="card__title">Лесные огоньки: история одной фотографии</p>
-                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                            чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
                         <p class="card__source">Афиша</p>
                     </div>
                     <div class="card">
                         <img class="card__img" src="<%=require('./images/card6.png')%>" alt="">
                         <p class="card__data">2 августа, 2019</p>
                         <p class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
-                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                            необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
                         <p class="card__source">Медиазона</p>
                     </div>
                 </div>
-                
+
                 <button class="card-list__button">Показать еще</button>
             </div>
         </main>
@@ -127,13 +140,14 @@
         <footer class="footer">
             <p class="footer__supersite">&copy; 2020. Supersite</p>
             <div class="footer__links">
-                <a href="./main.html" class="link footer__link-main">Главная</a>
+                <a href="./index.html" class="link footer__link-main">Главная</a>
                 <a href="./about.html" class="link footer__link-project">О проекте</a>
                 <a href="https://praktikum.yandex.ru" class="link footer__link-praktikum">Яндекс.Практикум</a>
             </div>
             <div class="footer__social">
                 <a href="" class="icon footer__link-git"><img src="<%=require('./images/git-icon.svg')%>" alt=""></a>
-                <a href="" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>" alt=""></a>
+                <a href="" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
+                        alt=""></a>
             </div>
         </footer>
     </div>

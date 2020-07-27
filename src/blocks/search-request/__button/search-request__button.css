@@ -1,8 +1,5 @@
 .search-request__button{
     width: 168px;
-    position: absolute;
-    top: 270px;
-    left: 856px;
     z-index: 1;
 height: 65px;
 background: #2F71E5;
@@ -15,6 +12,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 24px;
 color: white;
+margin-left: -168px;
 }
 
 .search-request__button:hover{

@@ -9,7 +9,7 @@ module.exports = {
   entry: {
       main: './src/script/main.js',
       about: './src/script/about.js',
-      analitics: './src/script/analitics.js',
+      analitics: './src/script/analitics.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

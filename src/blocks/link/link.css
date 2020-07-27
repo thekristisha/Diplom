@@ -11,5 +11,5 @@ color: #1A1B22;
 }
 .link:hover{
     cursor: pointer;
-    color: #B6BCBF;
+    opacity: 0.4;
 }

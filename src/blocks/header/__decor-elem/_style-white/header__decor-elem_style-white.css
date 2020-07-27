@@ -1,7 +1,5 @@
 .header__decor-elem.header__decor-elem_style-white{
     background-color: #ffffff;
-    position: absolute;
-    left: 1150px;
-    top: 79px;
     width: 70px;
+    align-self: center;
 }

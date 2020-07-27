@@ -1,0 +1,8 @@
+.header__project-with-decor{
+max-width: 92px;
+max-height: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-left: 34px;
+}

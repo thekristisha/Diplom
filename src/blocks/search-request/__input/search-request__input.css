@@ -6,8 +6,6 @@ backdrop-filter: blur(8px);
 border-radius: 100px;
 width: 608px;
 height: 64px;
-display:block;
-margin:0 auto;
 }
 
 .search-request__input::-webkit-input-placeholder{

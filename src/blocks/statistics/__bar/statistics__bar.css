@@ -1,6 +1,6 @@
 .statistics__bar{
 width: 816px;
-background: linear-gradient(to right, #2F71E5 15%, #F5F6F7 15%);
+background:  #2F71E5;
 font-family: Roboto;
 height: 24px;
 font-style: normal;
@@ -13,6 +13,7 @@ color: #FFFFFF;
 margin-top: 58px;
 display: flex;
 align-items: center;
+width: 1128px;
 }
 .statistics__bar:first-child{
     margin-top: 31px;

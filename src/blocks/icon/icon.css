@@ -4,3 +4,6 @@
 .icon:last-child{
     margin-right: 0;
 }
+.icon:hover{
+    opacity: 0.4;
+}
