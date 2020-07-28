@@ -5,3 +5,8 @@
     text-decoration: none;
     font-family: 'Roboto';
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .header__main{
+        margin-right: 34px;
+    }
+}

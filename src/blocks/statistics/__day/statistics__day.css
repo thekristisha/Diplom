@@ -9,3 +9,9 @@ color: #1A1B22;
 .statistics__day:last-child{
 margin-bottom: 0;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .statistics__day{
+        margin: 31px 0;
+        width: 87px;
+    }
+}
