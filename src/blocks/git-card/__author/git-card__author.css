@@ -3,3 +3,9 @@
     max-width: 352px;
     margin: 24px 0 0 24px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .git-card__author{
+        max-width: 260px;
+        margin-top: 16px;
+    }
+}

@@ -5,3 +5,9 @@
 max-width: 1440px;
 background: #F5F6F7;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .technologies{
+    max-width: 768px;
+    }
+    
+}

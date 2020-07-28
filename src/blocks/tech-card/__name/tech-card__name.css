@@ -9,3 +9,8 @@ letter-spacing: 0.2px;
 color: #1A1B22;
 margin: 0 auto 23px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .tech-card__name{
+        margin: 0 auto 8px;
+    }  
+}

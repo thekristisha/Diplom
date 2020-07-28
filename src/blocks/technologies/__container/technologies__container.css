@@ -3,3 +3,9 @@
     display: flex;
     margin: 0 auto 97px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .technologies__container{
+        flex-direction: column;
+        margin: 40px auto 40px;
+    }  
+}

@@ -7,3 +7,9 @@
     color: #1A1B22;
     margin: 0;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .git-card__name{
+    font-size: 20px;
+    line-height: 30px;
+    }
+}
