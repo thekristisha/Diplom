@@ -7,3 +7,8 @@ line-height: 22px;
 color: #B6BCBF;
 margin-left: 104px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .footer__supersite{
+        margin-left: 40px;
+    }
+}

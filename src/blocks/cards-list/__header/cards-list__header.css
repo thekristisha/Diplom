@@ -7,3 +7,9 @@
     align-self: center;
     margin-top: 80px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .cards-list__header{
+        width: 688px;
+        margin-top: 40px;
+    }
+}

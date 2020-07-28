@@ -3,3 +3,10 @@
     height: 464px;
     border-radius: 1000px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .two-columns__portrait{
+    margin-top: 21px;
+    width: 232px;
+    height: 232px;
+    }
+}

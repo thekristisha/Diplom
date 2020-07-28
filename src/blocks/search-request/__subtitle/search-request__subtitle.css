@@ -8,3 +8,9 @@ font-size: 18px;
 line-height: 24px;
 color: white;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .search-request__subtitle{
+        max-width: 452px;
+        margin: 0 0 24px 163px;
+    }
+}

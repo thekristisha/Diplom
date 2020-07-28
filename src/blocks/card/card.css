@@ -19,3 +19,12 @@
     box-shadow: 6px 6px 58px 2px rgba(8, 29, 45, 0.1);
     cursor: pointer;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .card{
+        max-width: 224px;
+        margin: 0 8px 8px 0;
+    }
+    .card:nth-child(3n){
+        margin-right: 0;
+    }
+}

@@ -8,3 +8,9 @@
    justify-content: space-between;
    align-items: center;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .footer{
+        max-width: 768px;
+        display: flex;
+    }
+}

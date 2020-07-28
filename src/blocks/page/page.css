@@ -8,3 +8,8 @@
     font-family: Roboto, Roboto Slab, Source Sans Pro;
     color: #1A1B22;;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .page{
+        max-width: 768px;
+    }
+}

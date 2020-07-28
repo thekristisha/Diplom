@@ -13,3 +13,11 @@ color: #1A1B22;
     cursor: pointer;
     opacity: 0.4;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .link{
+        margin-right: 25px;
+        }
+        .link:last-child{
+            margin-right: 0;
+        }
+}

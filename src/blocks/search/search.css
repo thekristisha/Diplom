@@ -15,3 +15,8 @@
     background: rgba(0,0,0,0.5);
     z-index: 1;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .search{
+        height: 400px;
+    }
+}

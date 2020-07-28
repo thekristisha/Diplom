@@ -18,3 +18,9 @@ height: 64px;
    
     opacity: 0; transition: opacity 0.3s ease;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .search-request__input{
+    width: 452px;
+    height: 56px;
+}
+}

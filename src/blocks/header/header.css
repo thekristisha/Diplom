@@ -15,3 +15,9 @@
     position: relative;
     z-index: 5;
 }
+
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .header{
+        max-width: 768px;
+    }
+}

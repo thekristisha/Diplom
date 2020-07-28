@@ -19,3 +19,10 @@ margin-left: -168px;
     cursor: pointer;
     background: #347EFF;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .search-request__button{
+        width: 160px;
+        height: 56px;
+        margin-left: -160px;
+    }
+}

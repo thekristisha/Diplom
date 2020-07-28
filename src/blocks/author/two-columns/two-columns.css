@@ -8,3 +8,9 @@
     max-width: 1120px;
     max-height: 464px;
 }
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .two-columns{
+        max-width: 688px;
+    margin: 40px auto 48px; 
+    }
+}
