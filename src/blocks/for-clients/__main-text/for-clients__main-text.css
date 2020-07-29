@@ -13,5 +13,15 @@ color: #1A1B22;
     margin: 16px 0 26px 40px;
     max-width: 688px;
     }
-    
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .for-clients__main-text{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 288px; 
+        margin: 16px auto 33px;
+    }
 }

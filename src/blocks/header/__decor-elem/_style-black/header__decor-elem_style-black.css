@@ -3,9 +3,8 @@
     width: 90px;
 }
 @media screen and (min-width:288px) and (max-width:687px){
-    .header__decor-elem.header__decor-elem_style-black{
-        
+    .header__decor-elem.header__decor-elem_style-black{ 
     margin: 0;
-    width: 87px;
+    width: 76px;
     }
 }

@@ -7,3 +7,8 @@ line-height: 22px;
 color: #B6BCBF;
 margin: 24px 0 0 24px;
 }
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-card__date{ 
+        margin: 16px 0 0 16px;
+    }
+}

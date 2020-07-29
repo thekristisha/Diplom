@@ -3,3 +3,8 @@
     flex-direction: column;
     margin-left: 16px;
 }
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-card__second-column{ 
+      margin-left: 12px;
+    }
+}

@@ -13,3 +13,9 @@
     max-width: 296px;
     }
 }
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-card__commit{ 
+        max-width: 246px;
+        margin-left: 16px;
+    }
+}

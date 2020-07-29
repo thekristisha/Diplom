@@ -46,7 +46,7 @@
         <section class="technologies">
             <div class="technologies__container">
                 <p class="technologies__title">Используемые технологии</p>
-                <div class="technologies__second_column">
+                <div class="technologies__second-column">
                     <div class="tech-card">
                         <p class="tech-card__name">HTML</p>
                         <img class="tech-card__img" src="<%=require('./images/HTML.png')%>" alt="">
@@ -91,7 +91,20 @@
                 <a class="git-history__link" href="">Открыть в Github ></a>
             </div>
 
-            <div class="git-history__swiper"> 
+            <div class="git-history__swiper">
+
+                <div class="git-card carousel-cell">
+                    <p class="git-card__date">14 августа, 2019</p>
+                    <div class="git-card__author">
+                        <img class="git-card__photo" src="<%=require('./images/avatar.jpg')%>" alt="">
+                        <div class="git-card__second-column">
+                            <p class="git-card__name">Инга Иванова</p>
+                            <p class="git-card__mail">ingaiva@yandex.ru</p>
+                        </div>
+                    </div>
+                    <p class="git-card__commit">ith Emmet, you can type CSS-like expressions that can be dynamically
+                        parsed, and produce output depending on what you type in the abb... </p>
+                </div>
 
                 <div class="git-card carousel-cell">
                     <p class="git-card__date">14 августа, 2019</p>
@@ -102,9 +115,10 @@
                             <p class="git-card__mail">anton@yandex.ru</p>
                         </div>
                     </div>
-                    <p class="git-card__commit">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    <p class="git-card__commit">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can
+                        greatly improve your HTML & CSS workflow.</p>
                 </div>
-                
+
                 <div class="git-card carousel-cell">
                     <p class="git-card__date">14 августа, 2019</p>
                     <div class="git-card__author">
@@ -114,9 +128,10 @@
                             <p class="git-card__mail">mariiifed@yandex.ru</p>
                         </div>
                     </div>
-                    <p class="git-card__commit">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
+                    <p class="git-card__commit">You can install this plugin directly from NetBeans Plugin Portal: in
+                        NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
                 </div>
-                
+
                 <div class="git-card carousel-cell">
                     <p class="git-card__date">14 августа, 2019</p>
                     <div class="git-card__author">
@@ -126,31 +141,50 @@
                             <p class="git-card__mail">ingaiva@yandex.ru</p>
                         </div>
                     </div>
-                    <p class="git-card__commit">ith Emmet, you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abb... </p>
-                </div> 
+                    <p class="git-card__commit">ith Emmet, you can type CSS-like expressions that can be dynamically
+                        parsed, and produce output depending on what you type in the abb... </p>
+                </div>
+
+                <div class="git-card carousel-cell">
+                    <p class="git-card__date">14 августа, 2019</p>
+                    <div class="git-card__author">
+                        <img class="git-card__photo" src="<%=require('./images/portrait1.jpg')%>" alt="">
+                        <div class="git-card__second-column">
+                            <p class="git-card__name">Антон Долинин</p>
+                            <p class="git-card__mail">anton@yandex.ru</p>
+                        </div>
+                    </div>
+                    <p class="git-card__commit">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can
+                        greatly improve your HTML & CSS workflow.</p>
+                </div>
+
+            </div>
+            <button class="git-history__button">Открыть в GitHub</button>
 
         </section>
 
         <footer class="footer">
             <p class="footer__supersite">&copy; 2020. Supersite</p>
-            <div class="footer__links">
-                <a href="./main.html" class="link footer__link-main">Главная</a>
-                <a href="./about.html" class="link footer__link-project">О проекте</a>
-                <a href="https://praktikum.yandex.ru" class="link footer__link-praktikum">Яндекс.Практикум</a>
-            </div>
-            <div class="footer__social">
-                <a href="" class="icon footer__link-git"><img src="<%=require('./images/git-icon.svg')%>" alt=""></a>
-                <a href="" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
-                        alt=""></a>
+            <div class="footer__container">
+                <div class="footer__links">
+                    <a href="./index.html" class="link footer__link-main">Главная</a>
+                    <a href="./about.html" class="link footer__link-project">О проекте</a>
+                    <a href="https://praktikum.yandex.ru" class="link footer__link-praktikum">Яндекс.Практикум</a>
+                </div>
+                <div class="footer__social">
+                    <a href="" class="icon footer__link-git"><img src="<%=require('./images/git-icon.svg')%>"
+                            alt=""></a>
+                    <a href="" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
+                            alt=""></a>
+                </div>
             </div>
         </footer>
 
     </div>
-    
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
-    
+
 </body>
 
 </html>
-

@@ -12,3 +12,8 @@ text-decoration: none;
 color: #B6BCBF;
 cursor: pointer;
 }
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-history__link{ 
+    display: none;
+    }
+}

@@ -21,3 +21,11 @@ margin-right: 16px;
     margin-right: 8px;
     }
 }
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-card{ 
+        width: 288px;
+        height: 264px;
+        align-self: center;
+        margin: 0 16px 0;
+    }
+}
