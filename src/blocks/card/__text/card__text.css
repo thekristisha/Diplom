@@ -10,8 +10,18 @@ color: #1A1B22;
 @media  screen and (min-width:288px) and (max-width:1232px){
     .card__text{
         margin: 10px 16px 0;
-        height: 88px;
-        overflow: hidden;   
+        max-height: 88px;
+        overflow: hidden;
+        position: relative;
+        text-align: justify;
+        padding-right: 1em;   
     }
+    .card__text::before {
+        content: '…';
+        position: absolute;
+        right: -2px;
+        bottom: 1px;
+      }
+      
    
 }

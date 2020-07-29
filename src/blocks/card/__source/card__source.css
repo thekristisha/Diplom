@@ -16,6 +16,6 @@ color: #B6BCBF;
 }
 @media  screen and (min-width:288px) and (max-width:687px){
     .card__source{
-        margin: 5px 16px 0 20px;;  
+        margin: 5px 0 0 16px;  
     }
 }
