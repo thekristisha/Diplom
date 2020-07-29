@@ -13,3 +13,11 @@
         margin-top: 40px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .cards-list__header{
+    display: grid;
+    max-width: 288px;
+    margin: 32px auto 0;
+    max-height: 110px;
+    }
+}

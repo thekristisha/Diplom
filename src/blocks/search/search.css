@@ -20,3 +20,8 @@
         height: 400px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .search{
+        height: 536px;
+    }
+}

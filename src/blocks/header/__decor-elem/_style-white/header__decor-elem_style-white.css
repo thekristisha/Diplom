@@ -3,3 +3,8 @@
     width: 70px;
     align-self: center;
 }
+@media screen and (min-width:288px) and (max-width:687px){
+    .header__decor-elem_style-white{
+    width: 62px;
+    }
+}

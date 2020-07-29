@@ -6,3 +6,9 @@
         margin: 0 0 0 32px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .two-columns__main-text{
+        max-width: 288px;
+        margin: 24px 0 0;
+    }
+}

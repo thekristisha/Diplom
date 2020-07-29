@@ -13,3 +13,10 @@ color: #1A1B22;
     margin: 0;
     } 
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .cards-list__results{
+    font-size: 30px;
+    line-height: 34px;
+    margin: 0;
+    }
+}

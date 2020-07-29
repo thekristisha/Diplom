@@ -24,7 +24,14 @@
         max-width: 224px;
         margin: 0 8px 8px 0;
     }
-    .card:nth-child(3n){
-        margin-right: 0;
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .card{
+    max-width: 288px;
+    margin: 0 0 8px;
+    height: 446px;
+    }
+    .card:last-child{
+        margin-bottom: 0;
     }
 }

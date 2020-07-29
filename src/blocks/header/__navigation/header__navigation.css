@@ -12,3 +12,8 @@
     }
     
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .header__navigation{
+        margin: 16px 14px 0 0;
+    }
+}

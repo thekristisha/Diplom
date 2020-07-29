@@ -26,3 +26,10 @@ margin-left: -168px;
         margin-left: -160px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .search-request__button{
+    width: 288px;
+    margin: 16px auto 0;
+    padding: 0;
+    }
+}

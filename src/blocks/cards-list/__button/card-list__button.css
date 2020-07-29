@@ -23,3 +23,10 @@ cursor: pointer;
     margin: 32px auto 0;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .card-list__button{
+    margin: 13px auto 0;
+    padding: 0;
+    max-width: 288px;
+    }
+}

@@ -16,3 +16,10 @@ color: white;
         margin: 40px 0 16px 163px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .search-request__title{
+    font-size: 36px;
+    line-height: 40px;
+    margin: 30px 0 16px 19px;
+    }
+}

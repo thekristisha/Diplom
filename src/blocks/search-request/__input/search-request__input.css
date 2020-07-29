@@ -24,3 +24,8 @@ height: 64px;
     height: 56px;
 }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .search-request__input{
+    max-width: 288px; 
+    }
+}

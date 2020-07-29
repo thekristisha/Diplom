@@ -6,11 +6,18 @@
     margin: 80px auto 80px;
     display: flex;
     max-width: 1120px;
-    max-height: 464px;
+    /* max-height: 464px; */
 }
 @media  screen and (min-width:688px) and (max-width:1232px){
     .two-columns{
         max-width: 688px;
     margin: 40px auto 48px; 
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .two-columns{
+        max-width: 288px;
+        margin: 32px auto;
+        flex-direction: column;
     }
 }

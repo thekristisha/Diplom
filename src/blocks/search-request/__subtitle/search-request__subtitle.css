@@ -14,3 +14,11 @@ color: white;
         margin: 0 0 24px 163px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .search-request__subtitle{
+    max-width: 288px;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 64px 16px;
+    }
+}

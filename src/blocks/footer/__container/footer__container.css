@@ -1,0 +1,7 @@
+@media  screen and (min-width:288px) and (max-width:687px){
+    .footer__container{
+    display: flex;
+    width: 288px;
+    margin: 20px auto 40px;
+    }
+}

@@ -7,7 +7,7 @@
     min-height: 282px;
     background: #F5F6F7;
 }
-@media  screen and (min-width:688px) and (max-width:1232px){
+@media  screen and (min-width:288px) and (max-width:1232px){
     .news{
         padding-bottom: 40px;
     }

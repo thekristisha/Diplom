@@ -6,3 +6,8 @@ flex-direction: column;
 justify-content: space-between;
 margin-right: 34px;
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .header__main-with-decor{
+    margin: 0;
+    }
+}

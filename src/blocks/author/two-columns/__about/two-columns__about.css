@@ -6,3 +6,8 @@ font-size: 18px;
 line-height: 24px;
 margin: 24px 0 0 ;
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .two-columns__about{
+        margin: 16px 0 0;
+    }
+}
