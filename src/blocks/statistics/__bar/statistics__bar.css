@@ -23,3 +23,12 @@ width: 1128px;
         width: 568px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__bar{
+        width: 208px;
+        margin-top: 20px;
+    }
+    .statistics__bar:first-child{
+        margin-top: 12px;
+    }
+}

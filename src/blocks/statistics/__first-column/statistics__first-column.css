@@ -8,3 +8,8 @@
     margin: 0 0 0 40px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__first-column{
+        margin: 0 0 0 16px;
+    }
+}

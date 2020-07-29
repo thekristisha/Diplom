@@ -15,3 +15,10 @@ margin-bottom: 0;
         width: 87px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__day{
+    font-size: 18px;
+    margin: 12px 0;
+    width: 56px;
+    }
+}

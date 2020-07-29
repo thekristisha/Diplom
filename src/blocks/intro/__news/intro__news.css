@@ -12,3 +12,8 @@ color: #1A1B22;
     margin: 24px 0 0 40px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .intro__news{
+    margin: 16px 0 0 16px;
+    }
+}

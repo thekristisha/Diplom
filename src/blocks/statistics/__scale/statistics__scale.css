@@ -10,3 +10,8 @@
     max-width: 568px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__scale{
+        display: none;
+    }
+}

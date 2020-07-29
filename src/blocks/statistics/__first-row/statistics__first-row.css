@@ -10,3 +10,9 @@ align-items: center;
     max-width: 688px;
     }
 }
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__first-row{
+        max-width: 288px;
+        margin: 0 auto;
+    }
+}
