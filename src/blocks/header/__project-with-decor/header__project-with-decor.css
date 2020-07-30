@@ -1,0 +1,14 @@
+.header__project-with-decor{
+max-width: 92px;
+max-height: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin-left: 34px;
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .header__project-with-decor{
+    margin: 0;
+    width: 76px;
+    }
+}

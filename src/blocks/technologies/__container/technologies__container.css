@@ -1,0 +1,18 @@
+.technologies__container{
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto 97px;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .technologies__container{
+        flex-direction: column;
+        margin: 40px auto 40px;
+    }  
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .technologies__container{ 
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0;
+    }
+}

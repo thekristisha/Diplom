@@ -1,0 +1,27 @@
+.for-clients__main-text{
+max-width: 712px;
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+margin: 24px 0 94px 104px;
+color: #1A1B22;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .for-clients__main-text{
+    margin: 16px 0 26px 40px;
+    max-width: 688px;
+    }
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .for-clients__main-text{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 288px; 
+        margin: 16px auto 33px;
+    }
+}

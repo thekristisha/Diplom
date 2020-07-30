@@ -1,0 +1,19 @@
+.cards-list__analitics{
+text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #1A1B22;
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .cards-list__analitics{
+    max-width: 288px;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .cards-list__analitics{
+    margin: 16px 0 0;
+    }
+}

@@ -1,0 +1,14 @@
+@import url(./_is-active/news_is-active.css);
+.news{
+    display: none;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    min-height: 282px;
+    background: #F5F6F7;
+}
+@media  screen and (min-width:288px) and (max-width:1232px){
+    .news{
+        padding-bottom: 40px;
+    }
+}

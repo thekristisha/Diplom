@@ -1,0 +1,19 @@
+.header__navigation{
+    margin: 30px 101px 0 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .header__navigation{
+        margin: 23px 40px 0 0 ;
+    }
+    
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .header__navigation{
+        margin: 16px 14px 0 0;
+    }
+}

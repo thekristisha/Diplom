@@ -1,0 +1,18 @@
+.statistics__first-row{
+max-width: 1232px;
+border-bottom: 1px solid #1A1B22;
+display: flex;
+align-items: center;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .statistics__first-row{
+    margin: 50px 0 0 40px;
+    max-width: 688px;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__first-row{
+        max-width: 288px;
+        margin: 0 auto;
+    }
+}

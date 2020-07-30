@@ -1,0 +1,25 @@
+@import url(./__name/tech-card__name.css);
+@import url(./__img/tech-card__img.css);
+.tech-card{
+    width: 120px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tech-card:last-child{
+    margin-right: 0;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .tech-card{
+        margin-right: 64px;
+    }  
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .tech-card{ 
+        margin: 0 0 33px;
+    }
+    .tech-card:nth-last-of-type(even){
+        margin-right: 33px;
+    }
+}

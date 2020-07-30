@@ -1,0 +1,19 @@
+@import url(./_style-white/header__main_style-white.css);
+@import url(./_style-black/header__main_style-black.css);
+@import url(./_style-inactive/header__main_style-inactive.css);
+.header__main{
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .header__main{
+        margin-right: 34px;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .header__main{
+        margin-right: 11px;
+        font-size: 16px;
+    line-height: 24px;
+    }
+}

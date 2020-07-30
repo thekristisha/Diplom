@@ -1,0 +1,9 @@
+@import url(./_is-active/cards-list_is-active.css);
+@import url(./__header/cards-list__header.css);
+@import url(./__results/cards-list__results.css);
+@import url(./__analitics/cards-list__analitics.css);
+@import url(./__container/cards-list__container.css);
+@import url(./__button/card-list__button.css);
+.cards-list {
+    display: none;
+}

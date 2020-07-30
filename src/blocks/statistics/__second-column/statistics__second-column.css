@@ -1,0 +1,18 @@
+.statistics__second-column{
+    margin: 8px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1128px;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .statistics__second-column{
+        max-width: 568px;
+    margin: 0 0 0 13px;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .statistics__second-column{
+        max-width: 208px;
+        margin: 0 0 0 16px;
+    }
+}

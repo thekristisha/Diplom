@@ -1,0 +1,10 @@
+@import url(./__main/intro__main.css);
+@import url(./__analitics/intro__analitics.css);
+@import url(./__asked/intro__asked.css);
+@import url(./__news/intro__news.css);
+@import url(./__news-quantity/intro__news-quantity.css);
+@import url(./__mentions/intro__mentions.css);
+@import url(./__mentions-quantity/intro__mentions-quantity.css);
+.intro{
+    max-width: 1440px;
+}

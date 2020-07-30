@@ -1,0 +1,18 @@
+.technologies__second-column{
+    display: flex;
+    justify-content: space-between;
+    margin: 93px 0 0 178px;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .technologies__second-column{
+        max-width: 672px;
+        margin: 40px 0 0 40px;
+    }  
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .technologies__second-column{ 
+        flex-wrap: wrap;
+        max-width: 273px;
+        margin: 40px auto 7px;
+    }
+}

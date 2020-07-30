@@ -1,0 +1,16 @@
+@import url(./__header/git-history__header.css);
+@import url(./__title/git-history__title.css);
+@import url(./__link/git-history__link.css);
+@import url(./__swiper/git-history__swiper.css);
+@import url(./__button/git-history__button.css);
+
+.git-history{
+    max-width: 1440px;
+    background: #F5F6F7;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .git-history{
+        padding-bottom: 40px;
+    }
+
+}

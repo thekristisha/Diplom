@@ -1,0 +1,21 @@
+.git-card__commit{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 352px;
+    margin: 16px auto 0;
+    color: #1A1B22;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .git-card__commit{
+    max-width: 296px;
+    }
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-card__commit{ 
+        max-width: 246px;
+        margin-left: 16px;
+    }
+}

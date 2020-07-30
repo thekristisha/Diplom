@@ -1,0 +1,22 @@
+.cards-list__results{
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 46px;
+color: #1A1B22;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .cards-list__results{
+    font-size: 30px;
+    line-height: 34px;
+    margin: 0;
+    } 
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .cards-list__results{
+    font-size: 30px;
+    line-height: 34px;
+    margin: 0;
+    }
+}

@@ -1,0 +1,19 @@
+.intro__mentions{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+color: #1A1B22;
+margin: 4px 0 80px 104px;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .intro__mentions{
+    margin: 4px 0 40px 40px;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .intro__mentions{
+    margin: 4px 0 24px 16px;
+    }
+}

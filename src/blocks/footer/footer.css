@@ -1,0 +1,24 @@
+@import url(./__supersite/footer__supersite.css);
+@import url(./__container/footer__container.css);
+@import url(./__links/footer__links.css);
+@import url(./__social/footer__social.css);
+.footer{
+    max-width: 1440px;
+    height: 80px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .footer{
+        max-width: 768px;
+        display: flex;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .footer{
+    flex-direction: column-reverse;
+    height: 224px;
+    align-items: flex-start;
+    }
+}

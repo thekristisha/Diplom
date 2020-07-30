@@ -1,0 +1,9 @@
+.statistics__results{
+    max-width: 1232px;
+    display: flex;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .statistics__results{
+    max-width: 688px;
+    }
+}

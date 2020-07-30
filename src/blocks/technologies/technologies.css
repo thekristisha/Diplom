@@ -1,0 +1,13 @@
+@import url(./__container/technologies__container.css);
+@import url(./__title/technologies__title.css);
+@import url(./__second-column/technologies__second-column.css);
+.technologies{
+max-width: 1440px;
+background: #F5F6F7;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .technologies{
+    max-width: 768px;
+    }
+    
+}

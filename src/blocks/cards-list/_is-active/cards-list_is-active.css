@@ -1,0 +1,4 @@
+.cards-list.cards-list_is-active{
+    display: flex;
+    flex-direction: column;
+}

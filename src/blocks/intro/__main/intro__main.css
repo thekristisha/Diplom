@@ -1,0 +1,19 @@
+.intro__main{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+margin: 40px 0 0 104px;
+color: #1A1B22;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .intro__main{
+        margin: 32px 0 0 40px;
+    }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .intro__main{
+        display: none;
+    }
+}

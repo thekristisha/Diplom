@@ -1,0 +1,32 @@
+.link{
+text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+margin-right: 40px;
+color: #1A1B22;
+}
+.link:last-child{
+    margin-right: 0;
+}
+.link:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .link{
+        margin-right: 25px;
+        }
+        .link:last-child{
+            margin-right: 0;
+        }
+}
+@media  screen and (min-width:288px) and (max-width:687px){
+    .link{
+    margin: 0 0 15px;
+    text-align: left;
+    }
+    .link:last-child{
+        margin-bottom: 0;
+    }
+}

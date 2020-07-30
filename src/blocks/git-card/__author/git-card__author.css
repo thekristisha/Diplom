@@ -1,0 +1,17 @@
+.git-card__author{
+    display: flex;
+    max-width: 352px;
+    margin: 24px 0 0 24px;
+}
+@media  screen and (min-width:688px) and (max-width:1232px){
+    .git-card__author{
+        max-width: 260px;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .git-card__author{ 
+        max-width: 260px;
+        margin: 8px 0 0 16px;
+    }
+}

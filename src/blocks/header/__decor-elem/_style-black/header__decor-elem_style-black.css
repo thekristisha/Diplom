@@ -1,0 +1,10 @@
+.header__decor-elem.header__decor-elem_style-black{
+    background-color: #1A1B22;
+    width: 90px;
+}
+@media screen and (min-width:288px) and (max-width:687px){
+    .header__decor-elem.header__decor-elem_style-black{ 
+    margin: 0;
+    width: 76px;
+    }
+}
