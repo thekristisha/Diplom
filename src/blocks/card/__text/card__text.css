@@ -1,12 +1,37 @@
 .card__text{
+max-height: 3.6em;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
-line-height: 22px;
+font-size: 15px;
+line-height: 1.2em;
 margin: 16px 24px 0;
 color: #1A1B22;
+overflow: hidden;
+position: relative;
+text-align: justify;
+padding-right: 1em;
 }
+
+  .card__text:before {
+     content: '…';
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+  }
+  
+  .card__text:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+  }
+
+
+
 @media  screen and (min-width:288px) and (max-width:1232px){
     .card__text{
         margin: 10px 16px 0;

@@ -1,12 +1,14 @@
 export class NewsApi {
-    constructor(toDate, apiKey) {
+    constructor(req, toDate, fromDate, apiKey) {
+      this.req = req;
       this.toDate = toDate;
+      this.fromDate = fromDate;
       this.apiKey = apiKey;
       }
       getNewsCards = () => {
-        var url = 'https://newsapi.org/v2/everything?' +
-          `q=cat&` +
-          `from=2020-08-04&`+
+        var url = 'http://newsapi.org/v2/everything?' +
+          `q=${this.req.value}&` +
+          `from=${this.fromDate}&`+
           `to=${this.toDate}&` +
           `pageSize=100&` +
           `apiKey=${this.apiKey}`;

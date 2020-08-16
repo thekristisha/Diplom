@@ -46,7 +46,7 @@
             </section>
         </div>
 
-        <main class="news news_is-active">
+        <main class="news">
 
             <div class="preloader">
                 <i class="preloader__circle"></i>
@@ -59,7 +59,7 @@
                 <p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
             </div>
 
-            <div class="cards-list cards-list_is-active">
+            <div class="cards-list">
 
                 <div class="cards-list__header">
                     <p class="cards-list__results">Результаты поиска</p>
@@ -67,16 +67,21 @@
                 </div>
                 <div class="cards-list__container">
 
-                    <template id="news-card-template" style="display: none">
-                        <div class="card">
-                            <img class="card__img" src="" alt="">
-                            <p class="card__data"></p>
-                            <p class="card__title"></p>
-                            <p class="card__text"></p>
-                            <p class="card__source"></p>
-                        </div>
-                    </template>
+                    
                 </div>
+                <template id="news-card-template" style="display: none">
+                        
+                    <div class="card">
+                        <a class="card__link" href="" target="_blank">
+                        <img class="card__img" src="" alt="">
+                        <p class="card__data"></p>
+                        <p class="card__title"></p>
+                        <p class="card__text"></p>
+                        <p class="card__source"></p>
+                    </a>
+                    </div>
+               
+                </template>
                 <button class="card-list__button">Показать еще</button>
         </main>
 

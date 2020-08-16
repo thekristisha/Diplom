@@ -1,7 +1,6 @@
 @import url(./_is-active/news_is-active.css);
 .news{
     display: none;
-    padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
     min-height: 282px;

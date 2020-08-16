@@ -1,5 +1,8 @@
 .card__img{
     border-radius: 10px 10px 0 0;
+    height: 272px;
+    width: 100%;
+    
 }
 @media  screen and (min-width:688px) and (max-width:1232px){
     .card__img{

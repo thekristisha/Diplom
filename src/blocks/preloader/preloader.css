@@ -5,6 +5,7 @@
 .preloader{
     max-width: 280px;
     max-height: 122px;
+    padding-top: 50px;
     margin: 0 auto;
     display: none;
     justify-content: center;
