@@ -1,9 +1,13 @@
 console.log('this is main page');
 import '../style/main.css';
+import { NewsCard } from "./components/NewsCard.js";
+import { NewsCardList } from "./components/NewsCardList.js";
+import {NewsApi} from "./modules/NewsApi.js";
+import {DataStorage} from "./modules/DataStorage";
 
 const today = new Date();
 let weekAgo  = new Date();
-weekAgo.setDate(weekAgo.getDate()-7);
+weekAgo.setDate(weekAgo.getDate()-6);
 const cardsAmount = 6;
 const todayYear = today.getFullYear();
 const weekAgoYear = weekAgo.getFullYear();
@@ -27,13 +31,11 @@ const cardsSection = document.querySelector('.cards-list');
 const moreBtn = document.querySelector('.card-list__button');
 const notFound = document.querySelector('.not-found');
 
-import { NewsCard } from "./NewsCard.js";
-import { NewsCardList } from "./NewsCardList.js";
-import {NewsApi} from "./NewsApi.js";
 
+const localStrg = new DataStorage();
 const newsApi = new NewsApi(req, toDate, fromDate, apiKey)
 const createNewsCard = (...args) => new NewsCard (...args);
-const newsList = new NewsCardList(cardNewsContainer, createNewsCard, moreBtn);
+const newsList = new NewsCardList(cardNewsContainer, createNewsCard, moreBtn, localStrg);
 
 function renderPreloader (isLoading){
     if (isLoading===true){
@@ -43,7 +45,7 @@ function renderPreloader (isLoading){
     }
 }
 
-if (localCardsNumber !== null || localCardsArr.length !== 0){
+if (localCardsNumber !== null){
     const localReq = JSON.parse(localStorage.getItem('request'));
     req.value = localReq;
     renderPreloader (false);
@@ -59,14 +61,15 @@ if (localCardsNumber !== null || localCardsArr.length !== 0){
 form.addEventListener('submit', function submit(e) {
 
     e.preventDefault();
-    localStorage.clear();
+    localStrg.clearStorage();
     newsSection.classList.add('news_is-active');
     renderPreloader(true);
-    localStorage.setItem('request', JSON.stringify(req.value));
+    localStrg.setReqValue(req.value);
     newsApi.getNewsCards()
   
 .then (res => {
-    localStorage.setItem('totalResults', JSON.stringify(res.totalResults));
+    localStrg.setResults(res.totalResults);
+
     if (res.articles.length === 0){
         moreBtn.classList.add('card-list__button_is-hidden');
         cardNewsContainer.innerHTML=""; 
@@ -79,7 +82,7 @@ form.addEventListener('submit', function submit(e) {
     console.log(res);
     notFound.classList.remove('not-found_is-active');
     cardsSection.classList.add('cards-list_is-active');
-    newsList.localStorage(res.articles);
+    localStrg.setCardsArr(res.articles);
     newsList.render(cardsAmount);
     }   
 }

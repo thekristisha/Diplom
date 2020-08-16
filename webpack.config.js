@@ -7,9 +7,9 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-      main: './src/script/main.js',
-      about: './src/script/about.js',
-      analitics: './src/script/analitics.js'
+      main: './src/js/index.js',
+      about: './src/js/about/index.js',
+      analytics: './src/js/analytics/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -87,9 +87,9 @@ module.exports = {
       }),
       new HtmlWebpackPlugin({
         inject: false,
-          template: './src/analitics.html',
-          filename:'analitics.html',
-          chunks: ['analitics']
+          template: './src/analytics.html',
+          filename:'analytics.html',
+          chunks: ['analytics']
         }),
     new WebpackMd5Hash(),
   ]

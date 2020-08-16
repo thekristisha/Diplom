@@ -1,41 +1,35 @@
 export class NewsCardList {
-    constructor(container, createCard, moreBtn) {
+    constructor(container, createCard, moreBtn, localStrg) {
         this.createCard = createCard;
         this.container = container;
         this.moreBtn = moreBtn;
         this.localArr = [];
+        this.localStrg = localStrg;
     }
 
     addCard = (element) => {
         this.container.append(element);
     }
 
-    localStorage = (arr) => {
-        localStorage.setItem('cards', JSON.stringify(arr));
-        this.localArr = JSON.parse(localStorage.getItem('cards'));
-        return this.localArr;
-    }
-
     render = (cardsAmount) => {
-
+        this.localArr = JSON.parse(localStorage.getItem('cards'));
         if (this.localArr.length > cardsAmount){
-            localStorage.setItem('cardsNumber', JSON.stringify(cardsAmount));
+            this.localStrg.setCardsShown(cardsAmount)
+            // localStorage.setItem('cardsNumber', JSON.stringify(cardsAmount));
             this.localAmount = JSON.parse(localStorage.getItem('cardsNumber'));
             for (let i = 0; i < cardsAmount; i++) {
                 this.addCard(this.createCard(this.localArr[i]).create());
             };
         } else if (this.localArr.length <= cardsAmount){
-            localStorage.setItem('cardsNumber', JSON.stringify(cardsAmount + (this.localArr.length - cardsAmount)));
+            this.localStrg.setCardsShown(cardsAmount + (this.localArr.length - cardsAmount))
+            // localStorage.setItem('cardsNumber', JSON.stringify(cardsAmount + (this.localArr.length - cardsAmount)));
 
             for (let i=0; i < (this.localArr.length); i++) {
                 this.addCard(this.createCard(this.localArr[i]).create());
             };
             this.moreBtn.classList.add('card-list__button_is-hidden');
         }
-        
-        // this.localArr.forEach(item => {
-        //     this.addCard(this.createCard(item).create());
-        // });
+
     }
     renderMore = () => {
         this.localArr = JSON.parse(localStorage.getItem('cards'));
@@ -45,8 +39,8 @@ export class NewsCardList {
             for (let i = this.localAmount; i < this.localAmount+6; i++) {
                 this.addCard(this.createCard(this.localArr[i]).create());
             }
-
-            localStorage.setItem('cardsNumber', JSON.stringify(this.localAmount+6));
+            this.localStrg.setCardsShown(this.localAmount+6);
+            // localStorage.setItem('cardsNumber', JSON.stringify(this.localAmount+6));
             this.counter = JSON.parse(localStorage.getItem('cardsNumber'));
 
         } else if ((this.localArr.length - this.localAmount) <= 6){
@@ -54,8 +48,8 @@ export class NewsCardList {
                 this.addCard(this.createCard(this.localArr[i]).create());
             };
 
- 
-            localStorage.setItem('cardsNumber', JSON.stringify(this.localAmount+ (this.localArr.length - this.localAmount)));
+            this.localStrg.setCardsShown(this.localAmount+ (this.localArr.length - this.localAmount));
+            // localStorage.setItem('cardsNumber', JSON.stringify(this.localAmount+ (this.localArr.length - this.localAmount)));
             this.moreBtn.classList.add('card-list__button_is-hidden');
         }
     }

@@ -11,6 +11,7 @@ export class NewsApi {
           `from=${this.fromDate}&`+
           `to=${this.toDate}&` +
           `pageSize=100&` +
+          `language=ru&` +
           `apiKey=${this.apiKey}`;
         return fetch(url)
           .then(res => {
