@@ -1,0 +1,6 @@
+.search-request__container{
+    max-width: 452px;
+    max-height: 56px;
+    display: flex;
+    margin: 0 auto;
+}

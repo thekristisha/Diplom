@@ -1,0 +1,6 @@
+.search-request__error{
+    display: block;
+    max-width: 500px;
+    margin: 5px auto 0;
+    color: #b6bcbf;
+}

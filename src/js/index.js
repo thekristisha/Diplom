@@ -3,9 +3,11 @@ import { NewsCard } from "./components/NewsCard.js";
 import { NewsCardList } from "./components/NewsCardList.js";
 import {NewsApi} from "./modules/NewsApi.js";
 import {DataStorage} from "./modules/DataStorage";
+import {Validation} from "./utils/Validation.js";
 
 const today = new Date();
 let weekAgo  = new Date();
+const validityErr = 'Нужно ввести ключевое слово';
 weekAgo.setDate(weekAgo.getDate()-6);
 const cardsAmount = 6;
 const todayYear = today.getFullYear();
@@ -22,7 +24,10 @@ const localCardsArr = JSON.parse(localStorage.getItem('cards'));
 
 
 const form = document.querySelector('.search-request__form');
+const input = form.querySelector('#search');
 const req = document.querySelector('#search');
+const searchBtn = form.querySelector('.search-request__button');
+const errorCaption = document.querySelector('#search-error');
 const cardNewsContainer = document.querySelector('.cards-list__container');
 const newsSection = document.querySelector('.news');
 const preloader = document.querySelector('.preloader');
@@ -35,6 +40,8 @@ const localStrg = new DataStorage();
 const newsApi = new NewsApi(req, toDate, fromDate, apiKey)
 const createNewsCard = (...args) => new NewsCard (...args);
 const newsList = new NewsCardList(cardNewsContainer, createNewsCard, moreBtn, localStrg);
+const checkValidity = new Validation(form, input, validityErr, errorCaption);
+
 
 function renderPreloader (isLoading){
     if (isLoading===true){
@@ -47,6 +54,8 @@ function renderPreloader (isLoading){
 if (localCardsNumber !== null){
     const localReq = JSON.parse(localStorage.getItem('request'));
     req.value = localReq;
+    
+    checkValidity.isValid(searchBtn);
     renderPreloader (false);
     newsSection.classList.add('news_is-active');
     cardsSection.classList.add('cards-list_is-active');
@@ -57,9 +66,20 @@ if (localCardsNumber !== null){
     cardsSection.classList.remove('cards-list_is-active');
 }
 
-form.addEventListener('submit', function submit(e) {
+function isEmpty (evt) {
+    if (evt.target.value == ''){
+        checkValidity.isValid();
+        checkValidity.setSubmitButtonState(searchBtn, true);
+    } else{
+        checkValidity.setSubmitButtonState(searchBtn, false);
+    }
+    
+}
 
+
+function renderCards (e){
     e.preventDefault();
+    checkValidity.isValid();
     localStrg.clearStorage();
     newsSection.classList.add('news_is-active');
     renderPreloader(true);
@@ -84,14 +104,17 @@ form.addEventListener('submit', function submit(e) {
     localStrg.setCardsArr(res.articles);
     newsList.render(cardsAmount);
     }   
-}
-    )
-.catch(err => console.log(`Ошибка: ${err}`))
+})
+
+.catch(err => alert(`Ошибка: ${err}`))
 .finally(() =>{
     
     renderPreloader(false);
-});
 })
+};
+
+form.addEventListener('input', isEmpty);
+searchBtn.addEventListener('click', renderCards)
 
 moreBtn.addEventListener('click', function(){
     newsList.renderMore(localCardsArr);
