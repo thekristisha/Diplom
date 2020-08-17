@@ -6,7 +6,7 @@ export class NewsApi {
       this.apiKey = apiKey;
       }
       getNewsCards = () => {
-        var url = 'http://newsapi.org/v2/everything?' +
+        var url = ' https://nomoreparties.co/news/v2/everything?' +
           `q=${this.req.value}&` +
           `from=${this.fromDate}&`+
           `to=${this.toDate}&` +

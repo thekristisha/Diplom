@@ -98,7 +98,6 @@ function renderCards (e){
 
     moreBtn.classList.remove('card-list__button_is-hidden');
     cardNewsContainer.innerHTML="";
-    console.log(res);
     notFound.classList.remove('not-found_is-active');
     cardsSection.classList.add('cards-list_is-active');
     localStrg.setCardsArr(res.articles);
