@@ -1,4 +1,3 @@
-console.log('this is main page');
 import '../style/main.css';
 import { NewsCard } from "./components/NewsCard.js";
 import { NewsCardList } from "./components/NewsCardList.js";

@@ -1,9 +1,10 @@
 export class Statistics{
-    constructor(getFigures, askedValue, totalResults, titleResults){
+    constructor(getFigures, askedValue, totalResults, titleResults, month){
         this.getFigures = getFigures;
         this.askedValue = askedValue;
         this.totalResults = totalResults;
         this.titleResults = titleResults;
+        this.month = month;
     }
 
     renderHeader = (localRequest) =>{   
@@ -25,7 +26,16 @@ export class Statistics{
 
     renderDatesColumn = (container) => {
         this.getFigures.adopteDate();
+        this.getFigures.adopteMonth();
         this.analyticsDates = JSON.parse(localStorage.getItem('analyticsDates'));
+        this.analyticsMonth = JSON.parse(localStorage.getItem('monthStatistics'));
+        if(this.analyticsMonth.length ==1){
+            this.monthValue = this.analyticsMonth.join('');
+            this.month.textContent = this.monthValue;
+        } else if (this.analyticsMonth.length > 1){
+            this.monthValue = this.analyticsMonth.join(',');
+            this.month.textContent = this.monthValue;
+        }
         this.analyticsDates.forEach(item => {
             container.append(this.createDatesColumn(item));            
         });

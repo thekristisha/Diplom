@@ -37,7 +37,6 @@ export class GetNumbers {
             this.dateArr.push(this.formatedDate.substr(4, )+ ', ' +this.formatedDate.substr(0, 2));
         });
         this.uniqueDates = Array.from(new Set(this.dateArr));
-        console.log(this.uniqueDates);
         this.localStrg.setAnalyticsDates(this.uniqueDates);
         this.localStrg.setNewsDate(this.localDatesArr);
     }
@@ -51,6 +50,37 @@ export class GetNumbers {
             }
           }, 0);
           this.localStrg.setTitleMatches(result);
+    }
+
+    adopteMonth = () =>{
+        this.monthArr = [];
+        this.cardsArr.sort(function (x,y){
+            if(Date.parse(x.publishedAt) < Date.parse(y.publishedAt)){
+                return -1
+            };
+            if(Date.parse(x.publishedAt) > Date.parse(y.publishedAt)){
+                return 1
+            };
+            if(Date.parse(x.publishedAt) == Date.parse(y.publishedAt)){
+                return 0
+            }; 
+        })
+
+        this.cardsArr.forEach(element => {
+            this.dateStr = element.publishedAt.substr(0, 10);
+            this.re = /\W+/gi
+            this.newDateStr = this.dateStr.replace(this.re, ',');
+            this.editedDate = new Date(this.newDateStr);
+            this.dateFormatter = new Intl.DateTimeFormat("ru",
+                {
+                    month: "long",
+                });
+            
+            this.formatedDate = (this.dateFormatter.format(this.editedDate)).toString().toUpperCase();;
+            this.monthArr.push(this.formatedDate);
+            this.uniqueMonths = Array.from(new Set(this.monthArr));
+        });
+        this.localStrg.setMonthStatistics(this.uniqueMonths);
     }
 
     countMatchesForBars = (request) => {        
@@ -71,7 +101,6 @@ export class GetNumbers {
               barResults.push(this.result);
         });
         this.localStrg.setBarStatistics(barResults);
-        console.log(barResults);
     };
 
 }

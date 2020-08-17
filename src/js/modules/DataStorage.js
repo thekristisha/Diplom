@@ -35,6 +35,10 @@ export class DataStorage {
         localStorage.setItem('barStatistics', JSON.stringify(statArr)); 
     }
 
+    setMonthStatistics = (months) => {
+        localStorage.setItem('monthStatistics', JSON.stringify(months)); 
+    }
+
     clearStorage = () => {
         localStorage.clear();
     }

@@ -1,7 +1,6 @@
 export class CommitCardList {
 
-    constructor(arr, container, createCard) {
-        this.arr = arr;
+    constructor(container, createCard) {
         this.createCard = createCard;
         this.container = container;
     }
@@ -10,7 +9,7 @@ export class CommitCardList {
         this.container.append(element);
     }
 
-    render = () => {
-        this.arr.forEach(item => this.addCard(this.createCard(item).create()));
+    render = (arr) => {
+        arr.forEach(item => this.addCard(this.createCard(item).create()));
     }
 }
