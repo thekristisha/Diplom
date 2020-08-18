@@ -88,75 +88,23 @@
         <section class="git-history">
             <div class="git-history__header">
                 <p class="git-history__title">История коммитов из GitHub</p>
-                <a class="git-history__link" href="">Открыть в Github ></a>
+                <a class="git-history__link" href="https://github.com/thekristisha/Diplom/commits/master" target="_blank">Открыть в Github ></a>
             </div>
 
             <div class="git-history__swiper">
-
-                <div class="git-card carousel-cell">
-                    <p class="git-card__date">14 августа, 2019</p>
-                    <div class="git-card__author">
-                        <img class="git-card__photo" src="<%=require('./images/avatar.jpg')%>" alt="">
-                        <div class="git-card__second-column">
-                            <p class="git-card__name">Инга Иванова</p>
-                            <p class="git-card__mail">ingaiva@yandex.ru</p>
+                <template id="git-card-template" style="display: none">
+                    <div class="git-card carousel-cell">
+                        <p class="git-card__date"></p>
+                        <div class="git-card__author">
+                            <img class="git-card__photo" alt="">
+                            <div class="git-card__second-column">
+                                <p class="git-card__name"></p>
+                                <p class="git-card__mail"></p>
+                            </div>
                         </div>
+                        <p class="git-card__commit"> </p>
                     </div>
-                    <p class="git-card__commit">ith Emmet, you can type CSS-like expressions that can be dynamically
-                        parsed, and produce output depending on what you type in the abb... </p>
-                </div>
-
-                <div class="git-card carousel-cell">
-                    <p class="git-card__date">14 августа, 2019</p>
-                    <div class="git-card__author">
-                        <img class="git-card__photo" src="<%=require('./images/portrait1.jpg')%>" alt="">
-                        <div class="git-card__second-column">
-                            <p class="git-card__name">Антон Долинин</p>
-                            <p class="git-card__mail">anton@yandex.ru</p>
-                        </div>
-                    </div>
-                    <p class="git-card__commit">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can
-                        greatly improve your HTML & CSS workflow.</p>
-                </div>
-
-                <div class="git-card carousel-cell">
-                    <p class="git-card__date">14 августа, 2019</p>
-                    <div class="git-card__author">
-                        <img class="git-card__photo" src="<%=require('./images/portrait2.jpg')%>" alt="">
-                        <div class="git-card__second-column">
-                            <p class="git-card__name">Мария Фёдорова</p>
-                            <p class="git-card__mail">mariiifed@yandex.ru</p>
-                        </div>
-                    </div>
-                    <p class="git-card__commit">You can install this plugin directly from NetBeans Plugin Portal: in
-                        NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
-                </div>
-
-                <div class="git-card carousel-cell">
-                    <p class="git-card__date">14 августа, 2019</p>
-                    <div class="git-card__author">
-                        <img class="git-card__photo" src="<%=require('./images/avatar.jpg')%>" alt="">
-                        <div class="git-card__second-column">
-                            <p class="git-card__name">Инга Иванова</p>
-                            <p class="git-card__mail">ingaiva@yandex.ru</p>
-                        </div>
-                    </div>
-                    <p class="git-card__commit">ith Emmet, you can type CSS-like expressions that can be dynamically
-                        parsed, and produce output depending on what you type in the abb... </p>
-                </div>
-
-                <div class="git-card carousel-cell">
-                    <p class="git-card__date">14 августа, 2019</p>
-                    <div class="git-card__author">
-                        <img class="git-card__photo" src="<%=require('./images/portrait1.jpg')%>" alt="">
-                        <div class="git-card__second-column">
-                            <p class="git-card__name">Антон Долинин</p>
-                            <p class="git-card__mail">anton@yandex.ru</p>
-                        </div>
-                    </div>
-                    <p class="git-card__commit">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can
-                        greatly improve your HTML & CSS workflow.</p>
-                </div>
+                </template>
 
             </div>
             <button class="git-history__button">Открыть в GitHub</button>
@@ -169,12 +117,14 @@
                 <div class="footer__links">
                     <a href="./index.html" class="link footer__link-main">Главная</a>
                     <a href="./about.html" class="link footer__link-project">О проекте</a>
-                    <a href="https://praktikum.yandex.ru" target="_blank" class="link footer__link-praktikum">Яндекс.Практикум</a>
+                    <a href="https://praktikum.yandex.ru" target="_blank"
+                        class="link footer__link-praktikum">Яндекс.Практикум</a>
                 </div>
                 <div class="footer__social">
-                    <a href="https://github.com/git" target="_blank" class="icon footer__link-git"><img src="<%=require('./images/git-icon.svg')%>"
-                            alt=""></a>
-                    <a href="https://www.facebook.com/yandex.praktikum/" target="_blank" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
+                    <a href="https://github.com/git" target="_blank" class="icon footer__link-git"><img
+                            src="<%=require('./images/git-icon.svg')%>" alt=""></a>
+                    <a href="https://www.facebook.com/yandex.praktikum/" target="_blank"
+                        class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
                             alt=""></a>
                 </div>
             </div>

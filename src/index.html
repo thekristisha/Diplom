@@ -36,89 +36,55 @@
                     за
                     прошедшую неделю.</p>
                 <form class="search-request__form" name="form" action="">
-                    <input placeholder="Введите тему новости" id="search" type="text" class="search-request__input"
-                        required>
-                    <span id="search-error" class="search-request__error" aria-live="polite"></span>
-                    <button class="search-request__button">Искать</button>
+                                            
+                        <input placeholder="Введите тему новости" id="search" type="text" class="search-request__input"
+                            required>
+                        <button class="search-request__button">Искать</button>
+                    
                 </form>
+                <span id="search-error" class="search-request__error" aria-live="polite"></span>
 
 
             </section>
         </div>
 
-        <main class="news news_is-active">
+        <main class="news">
 
-            <div class="preloader preloader_is-active">
+            <div class="preloader">
                 <i class="preloader__circle"></i>
                 <p class="preloader__text">Идет поиск новостей...</p>
             </div>
 
-            <div class="not-found not-found_is-active">
+            <div class="not-found">
                 <img class="not-found__img" src="<%=require('./images/not-found.png')%>" alt="">
                 <p class="not-found__title">Ничего не найдено</p>
                 <p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
             </div>
 
-            <div class="cards-list cards-list_is-active">
+            <div class="cards-list">
+
                 <div class="cards-list__header">
                     <p class="cards-list__results">Результаты поиска</p>
-                    <a href="./analitics.html" class="link cards-list__analitics">Посмотреть аналитику ></a>
+                    <a href="./analytics.html" class="link cards-list__analitics">Посмотреть аналитику ></a>
                 </div>
                 <div class="cards-list__container">
-                    <div class="card">
-                        <img class="card__img" src="<%=require('./images/card1.png')%>" alt="">
-                        <p class="card__data">2 августа, 2019</p>
-                        <p class="card__title">Национальное достояние – парки</p>
-                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                            складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
-                            приобщиться к природе.</p>
-                        <p class="card__source">Лента.ру</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="<%=require('./images/card2.png')%>" alt="">
-                        <p class="card__data">2 августа, 2019</p>
-                        <p class="card__title">Лесные огоньки: история одной фотографии</p>
-                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                            чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                        <p class="card__source">Медуза</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="<%=require('./images/card3.png')%>" alt="">
-                        <p class="card__data">2 августа, 2019</p>
-                        <p class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
-                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                            необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                        <p class="card__source">Риа</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="<%=require('./images/card4.png')%>" alt="">
-                        <p class="card__data">2 августа, 2019</p>
-                        <p class="card__title">Национальное достояние – парки</p>
-                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                            складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
-                            приобщиться к природе.</p>
-                        <p class="card__source">Дзен</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="<%=require('./images/card5.png')%>" alt="">
-                        <p class="card__data">2 августа, 2019</p>
-                        <p class="card__title">Лесные огоньки: история одной фотографии</p>
-                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
-                            чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-                        <p class="card__source">Афиша</p>
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="<%=require('./images/card6.png')%>" alt="">
-                        <p class="card__data">2 августа, 2019</p>
-                        <p class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
-                        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                            необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-                        <p class="card__source">Медиазона</p>
-                    </div>
-                </div>
 
+
+                </div>
+                <template id="news-card-template" style="display: none">
+
+                    <div class="card">
+                        <a class="card__link" href="" target="_blank">
+                            <img class="card__img" src="" alt="">
+                            <p class="card__data"></p>
+                            <p class="card__title"></p>
+                            <p class="card__text"></p>
+                            <p class="card__source"></p>
+                        </a>
+                    </div>
+
+                </template>
                 <button class="card-list__button">Показать еще</button>
-            </div>
         </main>
 
         <section class="author">
@@ -142,12 +108,14 @@
                 <div class="footer__links">
                     <a href="./index.html" class="link footer__link-main">Главная</a>
                     <a href="./about.html" class="link footer__link-project">О проекте</a>
-                    <a href="https://praktikum.yandex.ru" target="_blank" class="link footer__link-praktikum">Яндекс.Практикум</a>
+                    <a href="https://praktikum.yandex.ru" target="_blank"
+                        class="link footer__link-praktikum">Яндекс.Практикум</a>
                 </div>
                 <div class="footer__social">
-                    <a href="https://github.com/git" target="_blank" class="icon footer__link-git"><img src="<%=require('./images/git-icon.svg')%>"
-                            alt=""></a>
-                    <a href="https://www.facebook.com/yandex.praktikum/" target="_blank" class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
+                    <a href="https://github.com/git" target="_blank" class="icon footer__link-git"><img
+                            src="<%=require('./images/git-icon.svg')%>" alt=""></a>
+                    <a href="https://www.facebook.com/yandex.praktikum/" target="_blank"
+                        class="icon footer__link-facebook"><img src="<%=require('./images/facebook-icon.svg')%>"
                             alt=""></a>
                 </div>
             </div>

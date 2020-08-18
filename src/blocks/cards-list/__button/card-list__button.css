@@ -1,3 +1,4 @@
+@import url(./_is-hidden/card-list__button_is-hidden.css);
 .card-list__button{
 border: none;
 background: #FFFFFF;
@@ -15,6 +16,7 @@ align-self: center;
 }
 .card-list__button:hover{
 cursor: pointer;
+background: #E8E8E9;
 }
 @media  screen and (min-width:688px) and (max-width:1232px){
     .card-list__button{

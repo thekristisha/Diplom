@@ -6,14 +6,11 @@ backdrop-filter: blur(8px);
 border-radius: 100px;
 width: 608px;
 height: 64px;
+margin: 0 0 0 auto;
+padding: 0 200px 0 30px;
 }
 
-.search-request__input::-webkit-input-placeholder{
-    padding-left: 24px;
-}
-.search-request__input[value]{
-    margin-left: 24px;
-}
+
 .search-request__input:focus::-webkit-input-placeholder{
    
     opacity: 0; transition: opacity 0.3s ease;
