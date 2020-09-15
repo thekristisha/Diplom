@@ -1,4 +1,4 @@
-[Diplom](https://thekristisha.github.io/Diplom/)
+# [Diplom](https://thekristisha.github.io/Diplom/)
 ###### Версия 0.0.1
 
 ## О проекте:
